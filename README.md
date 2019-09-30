@@ -21,19 +21,19 @@ At the end of this setup you will end up with an EC2 instance, an S3 bucket, and
 
 ![Create CloudFormation Stack](/docs/create-stack.png?raw=true)
 
-4. Wait for the CloudFormation stack to finish and find the output URL.
+5. Wait for the CloudFormation stack to finish and find the output URL.
 
 ![CloudFormation Stack Output](/docs/stack-output.png?raw=true)
 
-5. Click on the output URL to see the demo web app. If the website doesn't load immediately, wait for the deployment in step 6 to finish.
+6. Click on the output URL to see the demo web app. If the website doesn't load immediately, wait for the deployment in step 6 to finish.
 
 ![Demo App](/docs/app.png?raw=true)
 
-6. You can now find your new CI/CD pipeline in the [CodePipeline console](https://console.aws.amazon.com/codesuite/codepipeline/pipelines).
+7. You can now find your new CI/CD pipeline in the [CodePipeline console](https://console.aws.amazon.com/codesuite/codepipeline/pipelines).
 
 ![CI/CD Pipeline](/docs/pipeline.png?raw=true)
 
-7. Now when you push a new change to GitHub, the pipeline will pick it up, build it, and deploy it. The demo app takes about 3 minutes to go through the pipeline.
+8. Now when you push a new change to GitHub, the pipeline will pick it up, build it, and deploy it. The demo app takes about 3 minutes to go through the pipeline.
 
 ![Pipeline History](/docs/pipeline-history.png?raw=true)
 
@@ -54,7 +54,7 @@ echo "<YOUR TOKEN>" >  ~/.github/access-token
 git clone https://github.com/<YOUR GIHUB USERNAME>/github-to-ec2-pipeline.git
 ```
 
-4. Run the CloudFormation script using the [AWS CLI](https://aws.amazon.com/cli/), and then follow steps 4 to 7 from [the console instructions](#setup-from-the-console):
+4. Run the CloudFormation script using the [AWS CLI](https://aws.amazon.com/cli/), and then follow steps 5 to 8 from [the console instructions](#setup-from-the-console):
 
 ```
 aws cloudformation deploy \
